@@ -1,5 +1,5 @@
 {
-    "name": "kvogelsa/mail",
+    "name": "laminas/mail",
     "description": "Provides generalized functionality to compose and send both text and MIME-compliant multipart e-mail messages",
     "keywords": [
         "laminas",
@@ -44,13 +44,13 @@
     },
     "extra": {
         "laminas": {
-            "component": "kvogelsa\\Mail",
-            "config-provider": "kvogelsa\\Mail\\ConfigProvider"
+            "component": "Laminas\\Mail",
+            "config-provider": "Laminas\\Mail\\ConfigProvider"
         }
     },
     "autoload": {
         "psr-4": {
-            "kvogelsa\\Mail\\": "src/"
+            "Laminas\\Mail\\": "src/"
         }
     },
     "autoload-dev": {
