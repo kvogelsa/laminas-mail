@@ -50,7 +50,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Laminas\\Mail\\": "src/"
+            "kvogelsa\\Mail\\": "src/"
         }
     },
     "autoload-dev": {
