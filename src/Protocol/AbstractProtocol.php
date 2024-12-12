@@ -351,8 +351,13 @@ abstract class AbstractProtocol
         // The '-' message prefix indicates an information string instead of a response string.
         } while (str_starts_with($more, '-'));
 
-        if ($errMsg !== '') {
+        if ($errMsg !== '' && (int) $cmd !== 501 ) {
+            // var_dump($errMsg);
+            // var_dump($cmd);
             throw new Exception\RuntimeException($errMsg, (int) $cmd);
+        }
+        elseif ((int) $cmd === 501) {
+            return 501;
         }
 
         return $msg;
